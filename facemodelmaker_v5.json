@@ -1,0 +1,439 @@
+{
+  "id": "0a23519f-1cb9-4219-aed5-782a22f69dc0",
+  "revision": 0,
+  "last_node_id": 124,
+  "last_link_id": 204,
+  "nodes": [
+    {
+      "id": 39,
+      "type": "ReActorBuildFaceModel",
+      "pos": [
+        2026.15625,
+        3009.13916015625
+      ],
+      "size": [
+        441,
+        150
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 193
+        },
+        {
+          "name": "face_models",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "slot_index": 0,
+          "links": [
+            38
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorBuildFaceModel"
+      },
+      "widgets_values": [
+        false,
+        false,
+        "face_model_mean",
+        "Mean"
+      ]
+    },
+    {
+      "id": 40,
+      "type": "ReActorBuildFaceModel",
+      "pos": [
+        2016.4283447265625,
+        3315.817138671875
+      ],
+      "size": [
+        441,
+        150
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "face_models",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "slot_index": 0,
+          "links": [
+            39
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorBuildFaceModel"
+      },
+      "widgets_values": [
+        false,
+        false,
+        "face_model_median",
+        "Median"
+      ]
+    },
+    {
+      "id": 43,
+      "type": "ReActorSaveFaceModel",
+      "pos": [
+        2544.8271484375,
+        3325.548583984375
+      ],
+      "size": [
+        327.5999755859375,
+        126
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "face_model",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 39
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "ReActorSaveFaceModel"
+      },
+      "widgets_values": [
+        true,
+        "face_model_median_0",
+        0
+      ]
+    },
+    {
+      "id": 42,
+      "type": "ReActorSaveFaceModel",
+      "pos": [
+        2529.22705078125,
+        3016.948974609375
+      ],
+      "size": [
+        327.5999755859375,
+        126
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "face_model",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 38
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "ReActorSaveFaceModel"
+      },
+      "widgets_values": [
+        true,
+        "face_model_mean_9",
+        0
+      ]
+    },
+    {
+      "id": 113,
+      "type": "LoadImagesFromDir //Inspire",
+      "pos": [
+        1561.4256591796875,
+        3033.599609375
+      ],
+      "size": [
+        327.04998779296875,
+        194
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            193
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImagesFromDir //Inspire"
+      },
+      "widgets_values": [
+        "C:\\Users\\adam\\Desktop\\comfyui\\bigdatadir",
+        25,
+        250,
+        false,
+        "None"
+      ]
+    },
+    {
+      "id": 114,
+      "type": "LoadImagesFromDir //Inspire",
+      "pos": [
+        1560.4259033203125,
+        3345.85986328125
+      ],
+      "size": [
+        327.04998779296875,
+        194
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImagesFromDir //Inspire"
+      },
+      "widgets_values": [
+        "C:\\Users\\adam\\Desktop\\comfyui\\bigdatadir",
+        50,
+        0,
+        false,
+        "None"
+      ]
+    },
+    {
+      "id": 124,
+      "type": "LoadImage",
+      "pos": [
+        1570.733154296875,
+        2654.79638671875
+      ],
+      "size": [
+        214,
+        326
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            203,
+            204
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "smiling-emoticon-square-face.png",
+        "image"
+      ]
+    },
+    {
+      "id": 122,
+      "type": "VRAMCleanup",
+      "pos": [
+        2030.942138671875,
+        2875.77197265625
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 203
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAMCleanup"
+      },
+      "widgets_values": [
+        true,
+        true
+      ]
+    },
+    {
+      "id": 123,
+      "type": "RAMCleanup",
+      "pos": [
+        2031.531005859375,
+        2663.35693359375
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 204
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RAMCleanup"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true,
+        3
+      ]
+    }
+  ],
+  "links": [
+    [
+      38,
+      39,
+      0,
+      42,
+      1,
+      "FACE_MODEL"
+    ],
+    [
+      39,
+      40,
+      0,
+      43,
+      1,
+      "FACE_MODEL"
+    ],
+    [
+      193,
+      113,
+      0,
+      39,
+      0,
+      "IMAGE"
+    ],
+    [
+      203,
+      124,
+      0,
+      122,
+      0,
+      "*"
+    ],
+    [
+      204,
+      124,
+      0,
+      123,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6830134553650705,
+      "offset": [
+        -837.1213747478339,
+        -2536.916618084685
+      ]
+    },
+    "frontendVersion": "1.26.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
