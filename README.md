@@ -130,6 +130,7 @@ EZmodel enhances this process by providing a **batch-optimized workflow** to gen
 3. **Configure your batch parameters** – define start index, batch size, and model name.  
 4. **Run workflow** – EZmodel processes the dataset and outputs the model(s).  
 5. *(Optional)* **Merge batches** – combine partial models into a single unified Reactor face model.
+6. (Optional) Generate Input Batches against a single model – combine a model into an entire directory of images (supporting 100's or thousands of queued images)
 
 ---
 
