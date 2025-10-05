@@ -1,0 +1,671 @@
+{
+  "id": "254ac767-598b-430f-a0dd-9b6682d6cde9",
+  "revision": 0,
+  "last_node_id": 83,
+  "last_link_id": 108,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "SaveImage",
+      "pos": [
+        1853.3984375,
+        -1412.61328125
+      ],
+      "size": [
+        672.3732299804688,
+        627.3250732421875
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 27
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.3.27"
+      },
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "ReActorFaceSwap",
+      "pos": [
+        1922.6180419921875,
+        -283.3448791503906
+      ],
+      "size": [
+        315,
+        358
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 18
+        },
+        {
+          "name": "source_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "face_model",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 20
+        },
+        {
+          "name": "face_boost",
+          "shape": 7,
+          "type": "FACE_BOOST",
+          "link": 22
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SWAPPED_IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": null
+        },
+        {
+          "name": "ORIGINAL_IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorFaceSwap",
+        "cnr_id": "comfyui-reactor",
+        "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134"
+      },
+      "widgets_values": [
+        true,
+        "inswapper_128.onnx",
+        "YOLOv5l",
+        "GFPGANv1.4.pth",
+        1,
+        1,
+        "female",
+        "female",
+        "0",
+        "0",
+        1
+      ]
+    },
+    {
+      "id": 9,
+      "type": "ReActorMaskHelper",
+      "pos": [
+        2270.996337890625,
+        -370.74957275390625
+      ],
+      "size": [
+        330,
+        454
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 106
+        },
+        {
+          "name": "swapped_image",
+          "type": "IMAGE",
+          "link": 7
+        },
+        {
+          "name": "mask_optional",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            27,
+            85,
+            86
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "MASK_PREVIEW",
+          "type": "IMAGE",
+          "links": null
+        },
+        {
+          "name": "SWAPPED_FACE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorMaskHelper",
+        "cnr_id": "comfyui-reactor",
+        "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134"
+      },
+      "widgets_values": [
+        "bbox/face_yolov8m.pt",
+        0.5,
+        10,
+        3,
+        10,
+        "sam_vit_l_0b3195.pth",
+        10,
+        0.93,
+        0,
+        0.7,
+        "False",
+        "dilate",
+        0,
+        9,
+        0.25
+      ]
+    },
+    {
+      "id": 66,
+      "type": "RAMCleanup",
+      "pos": [
+        2642.978515625,
+        -629.1522216796875
+      ],
+      "size": [
+        270,
+        130
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 85
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RAMCleanup"
+      },
+      "widgets_values": [
+        true,
+        true,
+        true,
+        3
+      ]
+    },
+    {
+      "id": 67,
+      "type": "VRAMCleanup",
+      "pos": [
+        2649.866455078125,
+        -368.6643981933594
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 86
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VRAMCleanup"
+      },
+      "widgets_values": [
+        true,
+        true
+      ]
+    },
+    {
+      "id": 82,
+      "type": "LoadImagesFromDir //Inspire",
+      "pos": [
+        991.5679321289062,
+        -154.03977966308594
+      ],
+      "size": [
+        327.04998779296875,
+        194
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "start_index",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "start_index"
+          },
+          "link": 108
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            106,
+            107
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImagesFromDir //Inspire"
+      },
+      "widgets_values": [
+        "C:\\Users\\adam\\Desktop\\batch_faceswap\\Passion-HD\\2019-10-09 - Passion-HD - Infatuation (50) 1125x1500",
+        1,
+        1,
+        false,
+        "None"
+      ]
+    },
+    {
+      "id": 83,
+      "type": "PrimitiveInt",
+      "pos": [
+        687.72705078125,
+        -49.76517105102539
+      ],
+      "size": [
+        270,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "INT",
+          "type": "INT",
+          "links": [
+            108
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PrimitiveInt"
+      },
+      "widgets_values": [
+        10,
+        "increment"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "ReActorSetWeight",
+      "pos": [
+        1493.0047607421875,
+        -491.6385803222656
+      ],
+      "size": [
+        390.5999755859375,
+        98
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "input_image",
+          "type": "IMAGE",
+          "link": 107
+        },
+        {
+          "name": "source_image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 103
+        },
+        {
+          "name": "face_model",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 104
+        }
+      ],
+      "outputs": [
+        {
+          "name": "INPUT_IMAGE",
+          "type": "IMAGE",
+          "links": [
+            18
+          ]
+        },
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            20
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorSetWeight",
+        "cnr_id": "comfyui-reactor",
+        "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134"
+      },
+      "widgets_values": [
+        "100%"
+      ]
+    },
+    {
+      "id": 15,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        615.0533447265625,
+        -575.861328125
+      ],
+      "size": [
+        327.5999755859375,
+        290
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            104
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel",
+        "cnr_id": "comfyui-reactor",
+        "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134"
+      },
+      "widgets_values": [
+        "face_model_mean_0.safetensors"
+      ]
+    },
+    {
+      "id": 81,
+      "type": "LoadImage",
+      "pos": [
+        974.7243041992188,
+        -596.0571899414062
+      ],
+      "size": [
+        274,
+        314
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            103
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "girl-2651680_960_720.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "ReActorFaceBoost",
+      "pos": [
+        1408.090576171875,
+        -129.44454956054688
+      ],
+      "size": [
+        315,
+        178
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_BOOST",
+          "type": "FACE_BOOST",
+          "links": [
+            22
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorFaceBoost",
+        "cnr_id": "comfyui-reactor",
+        "ver": "d901609a1d5d1942a6b069b2f8f3778fee3a7134"
+      },
+      "widgets_values": [
+        true,
+        "GPEN-BFR-2048.onnx",
+        "Bicubic",
+        1,
+        1,
+        true
+      ]
+    }
+  ],
+  "links": [
+    [
+      7,
+      8,
+      0,
+      9,
+      1,
+      "IMAGE"
+    ],
+    [
+      18,
+      13,
+      0,
+      8,
+      0,
+      "IMAGE"
+    ],
+    [
+      20,
+      13,
+      1,
+      8,
+      2,
+      "FACE_MODEL"
+    ],
+    [
+      22,
+      7,
+      0,
+      8,
+      3,
+      "FACE_BOOST"
+    ],
+    [
+      27,
+      9,
+      0,
+      16,
+      0,
+      "IMAGE"
+    ],
+    [
+      85,
+      9,
+      0,
+      66,
+      0,
+      "*"
+    ],
+    [
+      86,
+      9,
+      0,
+      67,
+      0,
+      "*"
+    ],
+    [
+      103,
+      81,
+      0,
+      13,
+      1,
+      "IMAGE"
+    ],
+    [
+      104,
+      15,
+      0,
+      13,
+      2,
+      "FACE_MODEL"
+    ],
+    [
+      106,
+      82,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      107,
+      82,
+      0,
+      13,
+      0,
+      "IMAGE"
+    ],
+    [
+      108,
+      83,
+      0,
+      82,
+      0,
+      "INT"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Output",
+      "bounding": [
+        636.283203125,
+        -1466.8187255859375,
+        1918.9232177734375,
+        703.8246459960938
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "EZmodel Batch Process ReActor",
+      "bounding": [
+        477.540283203125,
+        -718.0480346679688,
+        2455.401611328125,
+        835.4273071289062
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.6536983753107503,
+      "offset": [
+        -92.35318854344217,
+        1175.556752269294
+      ]
+    },
+    "frontendVersion": "1.26.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
