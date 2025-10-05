@@ -107,6 +107,7 @@ EZmodel enhances this process by providing a **batch-optimized workflow** to gen
 
 - [ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 - [Reactor Node](https://github.com/Gourieff/comfyui-reactor-node)
+- [ComfyUI-Inspire-Pack](https://github.com/ltdrdata/ComfyUI-Inspire-Pack)
 - Python 3.10+
 - Stable Diffusion compatible environment (GPU recommended)
 
