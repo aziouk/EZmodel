@@ -1,0 +1,657 @@
+{
+  "id": "de60d2c7-b3d1-4732-8ea3-1b7a381a15b9",
+  "revision": 0,
+  "last_node_id": 13,
+  "last_link_id": 13,
+  "nodes": [
+    {
+      "id": 4,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1683.0650634765625,
+        2648.597412109375
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_1.safetensors"
+      ]
+    },
+    {
+      "id": 3,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1678.6650390625,
+        2887.298095703125
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            4
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_3.safetensors"
+      ]
+    },
+    {
+      "id": 8,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1690.7659912109375,
+        3127.0986328125
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            6
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_5.safetensors"
+      ]
+    },
+    {
+      "id": 5,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1690.765625,
+        3003.898193359375
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            5
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_4.safetensors"
+      ]
+    },
+    {
+      "id": 7,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1686.365478515625,
+        3246.9990234375
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            7
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_6.safetensors"
+      ]
+    },
+    {
+      "id": 10,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1686.9151611328125,
+        3367.66796875
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            8
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_7.safetensors"
+      ]
+    },
+    {
+      "id": 11,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1988.205322265625,
+        2539.038818359375
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            10
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_8.safetensors"
+      ]
+    },
+    {
+      "id": 9,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1985.7861328125,
+        2658.170166015625
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            9
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_9.safetensors"
+      ]
+    },
+    {
+      "id": 6,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1665.989013671875,
+        2538.312255859375
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            1
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_0.safetensors"
+      ]
+    },
+    {
+      "id": 2,
+      "type": "ReActorLoadFaceModel",
+      "pos": [
+        1669.8653564453125,
+        2766.59814453125
+      ],
+      "size": [
+        285.5999755859375,
+        78
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            3
+          ]
+        },
+        {
+          "name": "FACE_MODEL_NAME",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorLoadFaceModel"
+      },
+      "widgets_values": [
+        "face_model_mean_2.safetensors"
+      ]
+    },
+    {
+      "id": 1,
+      "type": "ReActorMakeFaceModelBatch",
+      "pos": [
+        2230.82373046875,
+        2954.05517578125
+      ],
+      "size": [
+        268.3666687011719,
+        206
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "face_model1",
+          "type": "FACE_MODEL",
+          "link": 1
+        },
+        {
+          "name": "face_model2",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 2
+        },
+        {
+          "name": "face_model3",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 3
+        },
+        {
+          "name": "face_model4",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 4
+        },
+        {
+          "name": "face_model5",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 5
+        },
+        {
+          "name": "face_model6",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 6
+        },
+        {
+          "name": "face_model7",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 7
+        },
+        {
+          "name": "face_model8",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 8
+        },
+        {
+          "name": "face_model9",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 9
+        },
+        {
+          "name": "face_model10",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FACE_MODELS",
+          "type": "FACE_MODEL",
+          "links": [
+            12
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorMakeFaceModelBatch"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 13,
+      "type": "ReActorBuildFaceModel",
+      "pos": [
+        2501.08740234375,
+        3103.10546875
+      ],
+      "size": [
+        340.8500061035156,
+        150
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "face_models",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 12
+        }
+      ],
+      "outputs": [
+        {
+          "name": "FACE_MODEL",
+          "type": "FACE_MODEL",
+          "links": [
+            13
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReActorBuildFaceModel"
+      },
+      "widgets_values": [
+        true,
+        false,
+        "default",
+        "Mean"
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ReActorSaveFaceModel",
+      "pos": [
+        2861.977783203125,
+        2924.0830078125
+      ],
+      "size": [
+        286.36663818359375,
+        126
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "face_model",
+          "shape": 7,
+          "type": "FACE_MODEL",
+          "link": 13
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "ReActorSaveFaceModel"
+      },
+      "widgets_values": [
+        true,
+        "MergedModel",
+        0
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      6,
+      0,
+      1,
+      0,
+      "FACE_MODEL"
+    ],
+    [
+      2,
+      4,
+      0,
+      1,
+      1,
+      "FACE_MODEL"
+    ],
+    [
+      3,
+      2,
+      0,
+      1,
+      2,
+      "FACE_MODEL"
+    ],
+    [
+      4,
+      3,
+      0,
+      1,
+      3,
+      "FACE_MODEL"
+    ],
+    [
+      5,
+      5,
+      0,
+      1,
+      4,
+      "FACE_MODEL"
+    ],
+    [
+      6,
+      8,
+      0,
+      1,
+      5,
+      "FACE_MODEL"
+    ],
+    [
+      7,
+      7,
+      0,
+      1,
+      6,
+      "FACE_MODEL"
+    ],
+    [
+      8,
+      10,
+      0,
+      1,
+      7,
+      "FACE_MODEL"
+    ],
+    [
+      9,
+      9,
+      0,
+      1,
+      8,
+      "FACE_MODEL"
+    ],
+    [
+      10,
+      11,
+      0,
+      1,
+      9,
+      "FACE_MODEL"
+    ],
+    [
+      12,
+      1,
+      0,
+      13,
+      1,
+      "FACE_MODEL"
+    ],
+    [
+      13,
+      13,
+      0,
+      12,
+      1,
+      "FACE_MODEL"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1,
+      "offset": [
+        -1529.75854003709,
+        -2567.981865192123
+      ]
+    },
+    "frontendVersion": "1.26.13",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
