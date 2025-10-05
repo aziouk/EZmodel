@@ -39,6 +39,13 @@ It’s built with scalability, flexibility, and efficiency in mind — making it
 
 Whether you’re managing hundreds or thousands of face images, EZmodel helps automate and optimize the workflow of model creation for **Reactor ComfyUI**.
 
+
+## Whats Included
+EZfacemodelmaker - for generating ComfyUI-ReActor models from 100's of input image, supports batching models median_0, median_1 etc
+EZReActBatchModelCombiner - for combining generated ComfyUI-Reactor models, supports input_model_0 to input_model 9 (up to 10 model batch inputs) into a single model
+EZ-Reactor-Batch-Generator - for using a combined or single model and runing against an entire directory, useful for batch processing Reactor model inputs against a target dir.
+
+-
 ---
 
 
