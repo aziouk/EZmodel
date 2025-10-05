@@ -12,7 +12,7 @@ EZfacemodelmaker: Creating a single batch of models, starting from file incremen
   <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/ComfyUI-Compatible-orange.svg" alt="ComfyUI Compatible">
   <img src="https://img.shields.io/badge/Reactor-Supported-purple.svg" alt="Reactor Supported">
-  <img src="https://img.shields.io/github/stars/azio/EZmodel?style=social" alt="GitHub stars">
+  <img src="https://img.shields.io/github/stars/aziouk/EZmodel?style=social" alt="GitHub stars">
 </p>
 
 ---
