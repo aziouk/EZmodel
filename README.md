@@ -1,15 +1,7 @@
 # 🚀 EZmodel  
 **A collection of ComfyUI workflows for creating Reactor Face Models from large datasets**
 
-<p align="center">
-  <img width="1205" height="533" alt="comfyui-ezmodel" src="https://github.com/user-attachments/assets/d0df01a1-9a12-45a2-9eb0-cf1567fbaaf1" />
-</p>
-Creating a single batch of models from file #250, in batches of 25 images per batch. For now increments must be set manually each run for lower RAM systems. Higher Ram Systems can process 100+ images per batch, giving a theoretical maximum images for the ReAct model f 1000 or more.
 
-<p align="center">
-<img width="1057" height="705" alt="image" src="https://github.com/user-attachments/assets/db6d0628-0861-4ee7-b96e-9ebe3455059a" />
-</p>
-Above image: Batching the generated models
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT"></a>
@@ -44,6 +36,17 @@ It’s built with scalability, flexibility, and efficiency in mind — making it
 Whether you’re managing hundreds or thousands of face images, EZmodel helps automate and optimize the workflow of model creation for **Reactor ComfyUI**.
 
 ---
+
+<p align="center">
+  <img width="1205" height="533" alt="comfyui-ezmodel" src="https://github.com/user-attachments/assets/d0df01a1-9a12-45a2-9eb0-cf1567fbaaf1" />
+</p>
+Creating a single batch of models from file #250, in batches of 25 images per batch.
+
+<p align="center">
+<img width="1057" height="705" alt="image" src="https://github.com/user-attachments/assets/db6d0628-0861-4ee7-b96e-9ebe3455059a" />
+</p>
+Above image: Batching the generated models
+
 
 ## ⚙️ Key Features
 
