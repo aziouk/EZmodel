@@ -45,7 +45,7 @@ Whether you’re managing hundreds or thousands of face images, EZmodel helps au
 <p align="center">
 <img width="1057" height="705" alt="image" src="https://github.com/user-attachments/assets/db6d0628-0861-4ee7-b96e-9ebe3455059a" />
 </p>
-Above image: Batching the generated models
+EZReActBatchModelCombiner: Combines batched generated models into a single model for use
 
 
 ## ⚙️ Key Features
@@ -117,4 +117,4 @@ EZmodel enhances this process by providing a **batch-optimized workflow** to gen
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/EZmodel.git
+   git clone https://github.com/aziouk/EZmodel.git
