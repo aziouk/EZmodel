@@ -75,6 +75,9 @@ These values ensure smooth processing and prevent out-of-memory issues during wo
 
 ---
 
+<img width="1491" height="519" alt="image" src="https://github.com/user-attachments/assets/4093a1c8-c46b-4616-858c-be675090c2cd" />
+EZ-Reactor-Batch-Generator: Applie generated combined, or batched ReActor model with an entire directory batch. Useful for Reactor modeling of an entire directory en-mass. Increments +1 in target_dir per run.
+
 ## 🧰 What is ComfyUI?
 
 **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** is a powerful, modular, and node-based user interface for Stable Diffusion and related AI model workflows.  
