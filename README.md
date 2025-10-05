@@ -4,7 +4,7 @@
 <p align="center">
   <img width="1205" height="533" alt="comfyui-ezmodel" src="https://github.com/user-attachments/assets/d0df01a1-9a12-45a2-9eb0-cf1567fbaaf1" />
 </p>
-Creating a single batch of models from file #250, in batches of 25 images per batch.
+Creating a single batch of models from file #250, in batch customly defined to 25 images.
 
 
 <p align="center">
