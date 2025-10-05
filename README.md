@@ -32,21 +32,41 @@ EZfacemodelmaker: Creating a single batch of models, starting from file incremen
 
 ---
 
-## 🧩 Overview
+## 📦 What's Included
 
-**EZmodel** is a suite of **ComfyUI workflows** designed to streamline the process of building **Reactor Face Models** from large image datasets.  
-It’s built with scalability, flexibility, and efficiency in mind — making it easier to train, batch, and merge models even on limited hardware setups.
+EZmodel comes with three powerful and easy-to-use workflow tools — each designed to make model creation and batch processing a breeze:
 
-Whether you’re managing hundreds or thousands of face images, EZmodel helps automate and optimize the workflow of model creation for **Reactor ComfyUI**.
-
-
-## Whats Included
-EZfacemodelmaker - for generating ComfyUI-ReActor models from 100's of input image, supports batching models median_0, median_1 etc
-EZReActBatchModelCombiner - for combining generated ComfyUI-Reactor models, supports input_model_0 to input_model 9 (up to 10 model batch inputs) into a single model
-EZ-Reactor-Batch-Generator - for using a combined or single model and runing against an entire directory, useful for batch processing Reactor model inputs against a target dir.
-
--
 ---
+
+### 🧠 **EZFaceModelMaker**
+> Generate **ReActor-compatible face models** from hundreds (or thousands!) of input images.
+
+- 🔹 Automatically batches datasets into chunks (e.g. `median_0`, `median_1`, etc.)  
+- 🔹 Perfect for large-scale dataset handling  
+- 🔹 Keeps VRAM and RAM usage manageable with smart batching  
+
+---
+
+### 🧩 **EZReActBatchModelCombiner**
+> Combine multiple face model batches into a single unified model.
+
+- 🔹 Supports up to **10 model inputs** (`input_model_0` → `input_model_9`)  
+- 🔹 Merges results from multiple batches (e.g. `median_0`–`median_9`)  
+- 🔹 Great for finalizing a full composite model after multiple runs  
+
+---
+
+### ⚙️ **EZ-Reactor-Batch-Generator**
+> Run your **combined or single model** across an entire image directory for automated face model generation.
+
+- 🔹 Batch-processes a directory of target images  
+- 🔹 Ideal for automating **ReActor model applications**  
+- 🔹 Excellent for dataset-to-dataset transformations  
+
+---
+
+💡 *Together, these tools create a complete pipeline — from dataset → model → batch generation → final merge.*  
+
 
 
 <p align="center">
